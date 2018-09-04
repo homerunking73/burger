@@ -6,6 +6,7 @@ const bodyParser = require("body-parser");
 
 var PORT = process.env.PORT || 8000;
 
+var db = require("./models/connection.js");
 
 // Allow boy barser to parse the data
 app.use(bodyParser.urlencoded({ extended: false }));
